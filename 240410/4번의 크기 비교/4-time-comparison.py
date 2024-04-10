@@ -3,22 +3,22 @@ b, c, d, e = input().split()
 
 b = int(b); c = int(c); d = int(d); e = int(e)
 
-if a >= b:
+if a > b:
     print(1)
 else:
     print(0)
 
-if a >= c:
+if a > c:
     print(1)
 else:
     print(0)
 
-if a >= d:
+if a > d:
     print(1)
 else:
     print(0)
 
-if a >= e:
+if a > e:
     print(1)
 else:
     print(0)
