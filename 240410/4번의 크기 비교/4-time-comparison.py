@@ -1,7 +1,7 @@
 a = int(input())
 b, c, d, e = input().split()
 
-b = int(b); c = int(c); d = int(d), e = int(e)
+b = int(b); c = int(c); d = int(d); e = int(e)
 
 if a >= b:
     print(1)
