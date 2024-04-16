@@ -1,18 +1,17 @@
 a = input(); b = input(); c = input()
+al = len(a); bl = len(b); cl = len(c)
 
-a_ = len(a); b_ = len(b); c_ = len(c)
-
-if a_ >= b_:
-    if c_ >= a_:
-        print(c_ - a_)
-    elif b_ >= c_:
-        print(a_ - c_)
+if al >= bl: #a>b
+    if cl >= al:
+        print(cl-al)
+    elif bl >= cl:
+        print(al-cl)
     else:
-        print(a_ - b_)
-else: # b>a인 경우
-    if c_ >= b_:
-        print(c_ - a_)
-    elif a >= c:
-        print(b_ - c_)
+        print(al-bl)
+else: #b>a
+    if cl >= bl:
+        print(cl-al)
+    elif al >= cl:
+        print(bl-cl)
     else:
-        print(b_ - a_)
+        print(bl-al)
