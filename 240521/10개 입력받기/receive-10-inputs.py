@@ -8,4 +8,4 @@ for i in arr:
     else:
         number.append(i)
 
-print(sum(number), sum(number)/len(number))
+print(sum(number), '{:.1f}'.format(sum(number)/len(number)))
