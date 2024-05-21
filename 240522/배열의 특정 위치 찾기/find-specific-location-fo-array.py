@@ -11,4 +11,4 @@ for j in range(2, len(arr), 3):
     cnt += 1
     sum_3 += arr[j]
 
-print(sum_2, sum_3/cnt)
+print(sum_2, round(sum_3/cnt, 1))
