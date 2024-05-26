@@ -4,11 +4,11 @@ a = int(a); b = int(b)
 cnt = [0] * 10
 
 while True:
-    a = a // b
-    cnt[a%b] += 1
-
     if a <= 1:
         break
+
+    a = a // b
+    cnt[a%b] += 1
 
 sum_ = 0
 
