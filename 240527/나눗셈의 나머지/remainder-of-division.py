@@ -6,10 +6,8 @@ cnt = [0] * 10
 while True:
     if a <= 1:
         break
-
-    a = a // b
     cnt[a%b] += 1
-
+    a = a // b
 sum_ = 0
 
 for i in cnt:
