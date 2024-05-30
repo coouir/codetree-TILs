@@ -10,7 +10,7 @@ a, b = tuple(map(int, input().split()))
 sum = 0
 
 for num in range(a, b+1):
-    if is_check(num):
+    if num != 1 and is_check(num):
         sum += num
 
 print(sum)
