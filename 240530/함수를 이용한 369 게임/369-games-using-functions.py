@@ -1,5 +1,5 @@
 def contains_369(num):
-    while num > 0:
+    for j in range(len(str(num))):
         if num % 10 in [3, 6, 9]:
             return True
         num //= 10
