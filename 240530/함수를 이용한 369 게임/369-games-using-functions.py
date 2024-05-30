@@ -1,19 +1,20 @@
-def fa(n):
-    return n%3 == 0
+def contains_369(num):
+    while num > 0:
+        if num % 10 in [3, 6, 9]:
+            return True
+        num //= 10
+    return False
 
-def fb(n):
-    check = False
-    for j in str(n):
-        if j == '3' or j == '6' or j =='9':
-            check = True
-    return check
-        
+def is_369_number(num):
+    return contains_369(num) or (num%3==0)
+
+
+a, b = tuple(map(int, input().split()))
 
 cnt = 0
-a, b = tuple(map(int, input().split()))
-for i in range(a, b+1):
-    if fa(i) or fb(i):
+
+for num in range(a, b+1):
+    if is_369_number(num):
         cnt += 1
-    
 
 print(cnt)
