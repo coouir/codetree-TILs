@@ -1,17 +1,11 @@
-cnt = 0
-
 def f(num):
-    global cnt
     if num == 1:
-        return
-        
-    cnt += 1
+        return 0
 
-    if num%2 == 0:
-        return f(num = num // 2)
+    if num % 2 == 0:
+        return f(num // 2) + 1
     else:
-        return f(num = num // 3)
+        return f(num // 3) + 1
 
 n = int(input())
-f(n)
-print(cnt)
+print(f(n))
