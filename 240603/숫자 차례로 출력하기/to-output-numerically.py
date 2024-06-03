@@ -1,16 +1,17 @@
 n = int(input())
 
-def a(num, n):
-    if num == n+1:
+def print1(num):
+    if num == 0:
+        return
+    print1(num-1)
+    print(num, end=' ')
+
+def print2(num):
+    if num == 0:
         return
     print(num, end=' ')
-    a(num+1, n)
+    print2(num-1)
 
-def b(n):
-    if n == 0:
-        return 
-    print(n, end=' ')
-    b(n-1)
-a(1, n)
+print1(n)
 print()
-b(n)
+print2(n)
