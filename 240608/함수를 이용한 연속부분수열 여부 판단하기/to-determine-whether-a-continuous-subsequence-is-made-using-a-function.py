@@ -7,6 +7,7 @@ def f(a, b):
                 for _ in b[j+1::]:
                     if _ != a[i+cnt]:
                         check = False
+                    cnt += 1
                 return check
         
 
