@@ -1,7 +1,10 @@
 def f(a, b):
     check = True
     cnt = 1
-    s = a.index(b[0])
+    try:
+        s = a.index(b[0])
+    except:
+        return False
     for i in b[1::]:
         if a[s+cnt] != i:
             check = False
