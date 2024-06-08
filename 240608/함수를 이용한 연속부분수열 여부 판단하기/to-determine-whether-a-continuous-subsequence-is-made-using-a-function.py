@@ -1,10 +1,11 @@
 def f(a, b):
     check = True 
+    cnt = 1
     for i in range(len(a)):
         for j in range(len(b)):
             if a[i] == b[j]:
-                for _ in range(j+1, len(b)):
-                    if a[_-j+1] != b[_]:
+                for _ in b[j+1::]:
+                    if _ != a[i+cnt]:
                         check = False
                 return check
         
