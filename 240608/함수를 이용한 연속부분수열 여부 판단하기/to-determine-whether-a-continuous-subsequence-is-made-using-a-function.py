@@ -5,6 +5,10 @@ def f(a, b):
         s = a.index(b[0])
     except:
         return False
+    
+    if len(b) > len(a):
+        return False
+
     for i in b[1::]:
         if a[s+cnt] != i:
             check = False
