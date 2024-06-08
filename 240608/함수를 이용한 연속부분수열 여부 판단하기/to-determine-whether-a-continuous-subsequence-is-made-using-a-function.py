@@ -1,15 +1,12 @@
 def f(a, b):
-    check = True 
+    check = True
     cnt = 1
-    for i in range(len(a)):
-        for j in range(len(b)):
-            if a[i] == b[j]:
-                for _ in b[j+1::]:
-                    if _ != a[i+cnt]:
-                        check = False
-                    cnt += 1
-                return check
-        
+    s = a.index(b[0])
+    for i in b[1::]:
+        if a[s+cnt] != i:
+            check = False
+        cnt += 1
+    return check
 
 n1, n2 = tuple(map(int, input().split()))
 a = list(map(int, input().split()))
