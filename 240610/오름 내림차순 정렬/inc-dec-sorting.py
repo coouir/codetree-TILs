@@ -1,0 +1,6 @@
+n = int(input())
+list_ = list(map(int,input().split()))
+list_.sort()
+print(*list_)
+list_.sort(reverse=True)
+print(*list_)
