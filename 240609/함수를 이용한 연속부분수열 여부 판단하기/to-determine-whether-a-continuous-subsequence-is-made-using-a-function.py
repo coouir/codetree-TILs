@@ -5,14 +5,15 @@ def f(a, b):
         return False
     
     for i in range(len(a)):
-        for j in range(len(b)):
-            if a[i] == b[j]:
-                cnt = 1
-                for _ in range(j+1, len(b)):
-                    if a[i+cnt] != b[_]:
-                        check = False
-                    cnt += 1
+        if a[i] == b[0]:
+            check = True
+            for j in range(len(b)):
+                if a[i+j] != b[j]:
+                    check = False
+            if check == True:
                 return check
+    return check
+            
 
 n1, n2 = tuple(map(int, input().split()))
 a = list(map(int, input().split()))
