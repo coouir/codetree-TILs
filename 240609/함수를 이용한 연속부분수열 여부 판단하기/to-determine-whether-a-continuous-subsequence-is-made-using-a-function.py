@@ -8,11 +8,14 @@ def f(a, b):
         if a[i] == b[0]:
             check = True
             for j in range(len(b)):
+                if i+j >= len(a):
+                    return False
+
                 if a[i+j] != b[j]:
                     check = False
             if check == True:
                 return check
-    return check
+    return False
             
 
 n1, n2 = tuple(map(int, input().split()))
