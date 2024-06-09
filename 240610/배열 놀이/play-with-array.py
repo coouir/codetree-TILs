@@ -13,3 +13,4 @@ for i in range(q):
     elif qList[0] == 3:
         for j in range(qList[1]-1, qList[2]):
             print(nList[j], end=' ')
+        print()
