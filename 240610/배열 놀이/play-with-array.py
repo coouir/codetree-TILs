@@ -6,7 +6,10 @@ for i in range(q):
     if qList[0] == 1:
         print(nList[qList[1]-1])
     elif qList[0] == 2:
-        print(nList.index(qList[1])+1)
+        try:
+            print(nList.index(qList[1])+1)
+        except:
+            print(0)
     elif qList[0] == 3:
         for j in range(qList[1]-1, qList[2]):
             print(nList[j], end=' ')
