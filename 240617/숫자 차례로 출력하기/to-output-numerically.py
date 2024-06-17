@@ -3,7 +3,6 @@ def f(n):
         return
     f(n-1)
     print(n, end=' ')
-print()
 def g(n):
     if n == 0:
         return
@@ -12,4 +11,5 @@ def g(n):
 
 n = int(input())
 f(n)
+print()
 g(n)
