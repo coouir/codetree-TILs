@@ -6,6 +6,7 @@ cnt = 0
 for i in range(n):
     string = input()
     s += len(string)
-    cnt += string.count('a')
+    if string[0] == 'a':
+        cnt += 1
 
 print(s, cnt)
