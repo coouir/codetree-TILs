@@ -9,8 +9,5 @@ for i in range(q):
         string = string[-1] + string[:-1]
         print(string)
     elif n == 3:
-        string_3 = ''
-        for j in range(len(string)-1, -1, -1):
-            string_3 = string_3 + string[j]
-        string = string_3
+        string = string[::-1]
         print(string)
