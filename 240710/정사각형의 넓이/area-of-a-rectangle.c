@@ -6,7 +6,7 @@ int main() {
 
     printf("%d", n*n);
     if (n < 5) {
-        printf("tiny");
+        printf("\ntiny");
     }
     return 0;
 }
