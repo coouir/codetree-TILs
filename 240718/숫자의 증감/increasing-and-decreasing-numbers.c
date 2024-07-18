@@ -7,6 +7,10 @@ int main() {
         for (int i=1; i <= n; i++) {
             printf("%d ", i);
         }
+    } else if (c == 'D') {
+        for (int i=n; i >= 1; i--) {
+            printf("%d ", i);
+        }
     }
     return 0;
 }
