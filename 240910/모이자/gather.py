@@ -1,7 +1,7 @@
 n = int(input())
 arr = list(map(int, input().split()))
 
-m = 10000
+m = 500000
 for i in range(n):
     s = 0
     for j in range(n):
