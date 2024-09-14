@@ -9,7 +9,7 @@ for i in range(n):
     elif i == n-1:
         x = arr[:n-2]
         M = max(M, arr[n-1]+max(x))
-    else:
+    elif n != 3:
         x = arr[:i-1]+arr[i+2:]
         M = max(M, arr[i]+max(x))
 print(M)
