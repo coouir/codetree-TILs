@@ -47,3 +47,4 @@ for i in range(15):
             print(2)
             print(i+3, j-1)
             exit()
+print(0)
