@@ -43,3 +43,7 @@ for i in range(15):
             print(1)
             print(i+3, j-1)
             exit()
+        if arr[i][j]+arr[i+1][j-1]+arr[i+2][j-2]+arr[i+3][j-3]+arr[i+4][j-4] == "22222":
+            print(2)
+            print(i+3, j-1)
+            exit()
