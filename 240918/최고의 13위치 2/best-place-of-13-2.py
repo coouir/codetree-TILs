@@ -16,4 +16,4 @@ for i in range(N):
             continue
         m = max(m, sum(arr[i][j:j+3]))
 
-print(M, m)
+print(M + m)
