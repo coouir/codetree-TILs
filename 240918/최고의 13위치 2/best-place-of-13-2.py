@@ -8,7 +8,7 @@ for i in range(N):
         x = sum(arr[i][j:j+3])
         if M <= x:
             M = x
-            I, J = i, J
+            I, J = i, j
 m = 0
 for i in range(N):
     for j in range(N-2):
