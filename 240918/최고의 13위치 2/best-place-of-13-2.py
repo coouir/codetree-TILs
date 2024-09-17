@@ -9,12 +9,11 @@ for i in range(N):
         if M < x:
             M = x
             I, J = i, j
-
 m = 0
 for i in range(N):
     for j in range(N-2):
-        if i == I and (j == J or j == J+1 or j == J+2):
+        if i == I and (j == J or j == J+1 or j == J+2 or j == J-1 or j == J-2):
             continue
         m = max(m, sum(arr[i][j:j+3]))
 
-print(M + m)
+print(M, m)
