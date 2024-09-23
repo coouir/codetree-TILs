@@ -1,33 +1,35 @@
-arrM = [0, 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-
-def days_from_start_of_year(m, d):
-    total_days = 0
-    for i in range(1, m):
-        total_days += arrM[i]
-    total_days += d
-    return total_days
-
 m1, d1, m2, d2 = map(int, input().split())
-A = input()
+day = input()
+days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+days_dict = {days:idx for idx, days in enumerate(days)}
+idx = days_dict[day]
 
-day_str_to_num = {
-    "Mon": 0, "Tue": 1, "Wed": 2, "Thu": 3, "Fri": 4, "Sat": 5, "Sun": 6
-}
-target_weekday = day_str_to_num[A]
+def calcDate(m, d):
+    sum2 = 0
+    for i in range(1, m):
+        if i >= 8:
+            if i % 2 == 0:
+                sum2 += 31
+            else:
+                sum2 += 30
+        else:
+            if i % 2 == 0:
+                if i == 2:
+                    sum2 += 29
+                else:
+                    sum2 += 30
+            else:
+                sum2 += 31
+    sum2 += d
+    return sum2
 
-start_weekday = 0
+sum1 = calcDate(m1, d1)
+sum2 = calcDate(m2, d2)
 
-start_total_days = days_from_start_of_year(m1, d1)
-end_total_days = days_from_start_of_year(m2, d2)
+sum0 = sum2-sum1
 
-days_between = end_total_days - start_total_days
+count = sum0//7
+if sum0%7 >= idx:
+    count += 1
 
-start_date_weekday = (start_weekday + (start_total_days - 1)) % 7
-
-count = 0
-for i in range(days_between + 1):
-    if (start_date_weekday + i) % 7 == target_weekday:
-        count += 1
-
-# 결과 출력
 print(count)
