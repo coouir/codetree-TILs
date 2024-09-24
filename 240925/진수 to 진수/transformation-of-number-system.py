@@ -10,6 +10,6 @@ while True:
     if n < b:
         arr.append(n)
         break
-    arr.append(n%2)
-    n //= 2
+    arr.append(n%b)
+    n //= b
 print(''.join(map(str, arr[::-1])))
