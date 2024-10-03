@@ -7,10 +7,12 @@ for i in range(n):
         for j in range(int(x)):
             now -= 1
             arr[now] += 1
+        now -=1
     else:
         for j in range(int(x)):
             now += 1
             arr[now] += 1
+        now += 1
 
 cnt = 0
 for i in range(2001):
