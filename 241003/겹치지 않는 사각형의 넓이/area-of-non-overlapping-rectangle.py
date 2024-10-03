@@ -6,16 +6,15 @@ arr = [[0]*2001 for i in range(2001)]
 
 for i in range(x1A, x2A):
     for j in range(y1A, y2A):
-        arr[i][j] = 1
+        arr[i+1000][j+1000] = 1
 
 for i in range(x1B, x2B):
     for j in range(y1B, y2B):
-        arr[i][j] = 1
+        arr[i+1000][j+1000] = 1
 
 for i in range(x1M, x2M):
     for j in range(y1M, y2M):
-        arr[i][j] = 0
-
+        arr[i+1000][j+1000] = 0
 cnt = 0
 for i in range(2001):
     for j in range(2001):
