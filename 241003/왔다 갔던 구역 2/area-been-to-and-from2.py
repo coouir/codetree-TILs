@@ -3,13 +3,14 @@ now = 1000
 n = int(input())
 for i in range(n):
     x, D = input().split()
+    arr[now] += 1
     if D == 'L':
-        for j in range(int(x)):
+        for j in range(int(x)-1):
             now -= 1
             arr[now] += 1
-        now -=1
+        now -= 1
     else:
-        for j in range(int(x)):
+        for j in range(int(x)-1):
             now += 1
             arr[now] += 1
         now += 1
