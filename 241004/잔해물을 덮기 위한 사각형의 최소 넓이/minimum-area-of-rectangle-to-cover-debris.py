@@ -7,8 +7,8 @@ for i in range(x1A, x2A+1):
     for j in range(y1A, y2A+1):
         arr[i+1000][j+1000] = 1
 
-for i in range(x1B, x2B):
-    for j in range(y1B, y2B):
+for i in range(x1B+1, x2B):
+    for j in range(y1B+1, y2B):
             arr[i+1000][j+1000] = 0
 
 points = []
