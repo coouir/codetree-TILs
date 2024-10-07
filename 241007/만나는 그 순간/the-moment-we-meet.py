@@ -24,5 +24,5 @@ for i in range(M):
 for i in range(1, len(arrN)):
     if arrN[i] == arrM[i]:
         print(i)
-        break
+        exit()
 print(-1)
