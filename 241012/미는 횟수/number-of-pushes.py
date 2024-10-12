@@ -4,7 +4,7 @@ B = input()
 check = False
 
 for i in range(len(A)-1):
-    A = A[1:] + A[0]
+    A = A[-1]+A[:-1]
     if A == B:
         print(i+1)
         check = True
