@@ -1,19 +1,10 @@
 arr = list(input())
-N = []
-s = ''.join(arr)
 
-while (True):
-    try:
+while len(arr) > 1:
+    n = int(input())
 
-        x = int(input())
-        if x >= len(arr):
-            x = len(arr)-1
-        N.append(x)
-        
-        s = ''
-        for i in range(len(arr)):
-            if i not in N:
-                s += arr[i]
-        print(s)
-    except EOFError:
-        break
+    if n >= len(arr):
+        arr.pop(len(arr)-1)
+    else:
+        arr.pop(n)
+    print("".join(arr))
