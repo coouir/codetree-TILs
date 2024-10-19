@@ -14,12 +14,12 @@ for i in range(T):
     if arrN[x] == 1:
         if cntN[x] < K:
             arrN[y] = 1
-            cntN[x] += 1
         
     else:
         if arrN[y] == 1:
-            if cntN[y] < K: 
+            if cntN[y] < K:
                 arrN[x] = 1
-                cntN[y] += 1
+    cntN[x] += 1
+    cntN[y] += 1
 
 print(''.join(map(str, arrN[1:])))
