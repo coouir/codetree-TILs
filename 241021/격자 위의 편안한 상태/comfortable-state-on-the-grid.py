@@ -11,7 +11,7 @@ for j in range(M):
     for j in range(4):
         if arr[r+dxs[j]][c+dys[j]] == 1:
             cnt += 1
-    if cnt >= 3:
+    if cnt == 3:
         print(1)
     else:
         print(0)
