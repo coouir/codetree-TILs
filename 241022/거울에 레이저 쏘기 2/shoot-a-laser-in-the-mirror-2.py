@@ -43,14 +43,28 @@ if d == 2:
 elif d == 3:
     d = 2
 dxs, dys = [0, 1, 0, -1], [1, 0, -1, 0] #동남서북
-
 d_x, d_y = d_x + dxs[d], d_y + dys[d]
-# 0 1 2 3
+cnt = 0
 while(not(str(arr[d_x][d_y]).isdigit())):
     if arr[d_x][d_y] == '/':
-        d = (d + 1) % 4
+        if d == 0:
+            d = 3
+        elif d == 1:
+            d = 2
+        elif d == 2:
+            d = 1
+        else:
+            d == 0
     else:
-        d = (d + 3) % 4
+        if d == 0:
+            d = 1
+        elif d == 1:
+            d = 0
+        elif d == 2:
+            d = 3
+        else:
+            d = 2
     d_x, d_y = d_x + dxs[d], d_y + dys[d]
+    cnt += 1
 
-print(arr[d_x][d_y])
+print(cnt)
