@@ -46,6 +46,7 @@ dxs, dys = [0, 1, 0, -1], [1, 0, -1, 0] #동남서북
 d_x, d_y = d_x + dxs[d], d_y + dys[d]
 cnt = 0
 while(not(str(arr[d_x][d_y]).isdigit())):
+    
     if arr[d_x][d_y] == '/':
         if d == 0:
             d = 3
@@ -54,7 +55,7 @@ while(not(str(arr[d_x][d_y]).isdigit())):
         elif d == 2:
             d = 1
         else:
-            d == 0
+            d = 0
     else:
         if d == 0:
             d = 1
