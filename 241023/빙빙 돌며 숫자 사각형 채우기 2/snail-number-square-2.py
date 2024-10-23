@@ -14,9 +14,9 @@ for i in range(2, n * m + 1):
     
     if not in_range(nx, ny) or answer[nx][ny] != 0:
         dir_num = (dir_num + 3) % 4
-    print(x, y, i)
-
+        
     x, y = x + dxs[dir_num], y + dys[dir_num]
+    answer[x][y] = i
 
 for i in range(n):
     for j in range(m):
