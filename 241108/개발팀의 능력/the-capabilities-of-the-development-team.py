@@ -13,7 +13,7 @@ for i in range(5):
             x = arr[i] + arr[j]
             y = arr[a]
             z = sum(arr) - (x+y)
-            if x != y and y != z:
+            if x != y and y != z and x != z:
                 d = min(d, max(x,y,z) - min(x,y,z))
 
 if d == sys.maxsize:
