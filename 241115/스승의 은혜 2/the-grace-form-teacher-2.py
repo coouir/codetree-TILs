@@ -10,10 +10,10 @@ for i in range(N):
         if i == j:
             continue
         cntC += arr[j]
-        if cntC >= B:
-            M = max(M, cntP)
+        if cntC > B:
             break
         else:
             cntP += 1
+    M = max(M, cntP)
 
 print(M)
