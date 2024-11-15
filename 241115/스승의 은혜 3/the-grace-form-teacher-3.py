@@ -5,7 +5,7 @@ arr = sorted(arr, key = lambda x: [x[0]])
 
 M = 0
 for i in range(N):
-    cntC = arr[i][0]/2
+    cntC = arr[i][0]/2 + arr[i][1]
     cntP = 1
     for j in range(N):
         if i == j:
