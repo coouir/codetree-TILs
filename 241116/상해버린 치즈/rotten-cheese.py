@@ -11,12 +11,14 @@ for i in range(D):
             arr[arrD[i][1]] += 1
 
 M = 0
+arrP = [0]*51
 for i in range(51):
     if arr[i] >= S:
         cnt = 0
         for j in range(D):
-            if arrD[j][1] == i:
+            if arrD[j][1] == i and arrP[arrD[j][0]] == 0:
                 cnt += 1
+                arrP[arrD[j][0]] = 1
         M = max(M, cnt)
         if M > N:
             M = N
