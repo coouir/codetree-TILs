@@ -6,7 +6,8 @@ for i in range(N):
     for j in range(i+1, N):
 
         check = False
-
+        if K == 1:
+            check = True
         for k in range(1, K):
             for a in range(N):
                 for b in range(a+1, N):
