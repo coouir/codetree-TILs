@@ -20,6 +20,4 @@ for i in range(51):
                 cnt += 1
                 arrP[arrD[j][0]] = 1
         M = max(M, cnt)
-        if M > N:
-            M = N
 print(M)
