@@ -12,7 +12,7 @@ for i in range(D):
 
 M = 0
 for i in range(51):
-    if arr[i] == S:
+    if arr[i] >= S:
         cnt = 0
         for j in range(D):
             if arrD[j][1] == i:
