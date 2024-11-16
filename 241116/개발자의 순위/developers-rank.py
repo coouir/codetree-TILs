@@ -9,7 +9,7 @@ for i in range(N):
 
         for k in range(1, K):
             for a in range(N):
-                for b in range(i+1, N):
+                for b in range(a+1, N):
                     if arr[0][i] == arr[k][a] and arr[0][j] == arr[k][b]:
                         check = True
 
