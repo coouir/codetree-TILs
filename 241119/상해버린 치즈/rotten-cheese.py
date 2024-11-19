@@ -17,10 +17,13 @@ for i in range(1, M+1):
 
     if sum(arrP) == S:
         cnt = 0
+        arrPP = [0]*51
         for j in range(D):
             p, m, t = arrD[j]
-            if i == m:
+            if i == m and arrPP[p] == 0:
                 cnt += 1
+                arrPP[p] = 1
+
         Max = max(Max, cnt)
 
 print(Max)
