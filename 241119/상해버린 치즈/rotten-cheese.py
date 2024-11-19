@@ -1,7 +1,7 @@
 N, M, D, S = map(int, input().split())
 arrD = [list(map(int, input().split())) for _ in range(D)]
 arrS = [list(map(int, input().split())) for _ in range(S)]
-arrD.sort(key = lambda x: [x[1], x[2]])
+arrD.sort(key = lambda x: [x[1]])
 
 Max = 0
 
