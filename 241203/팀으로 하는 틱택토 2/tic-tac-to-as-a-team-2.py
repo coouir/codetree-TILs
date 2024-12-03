@@ -23,5 +23,12 @@ elif (arr[0][0] != arr[1][1] and arr[0][0] == arr[2][2]):
     cnt += 1
 elif (arr[0][0] != arr[1][1] and arr[1][1] == arr[2][2]):
     cnt += 1
+
+if (arr[0][2] == arr[1][1] and arr[0][2] != arr[2][1]):
+    cnt += 1
+elif (arr[0][2] != arr[1][1] and arr[0][2] == arr[2][1]):
+    cnt += 1
+elif (arr[0][2] != arr[1][1] and arr[1][1] == arr[2][1]):
+    cnt += 1
     
 print(cnt)
