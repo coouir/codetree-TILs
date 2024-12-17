@@ -7,7 +7,7 @@ int main() {
     cin >> a >> b;
 
     cout << a/b << ".";
-
+    a = (a) % b;
     for (int i=0; i<20; i++) {
         cout << (a*10) / b;
         a = (a*10) % b;
