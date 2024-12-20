@@ -10,8 +10,8 @@ int main() {
         sum_val += num;
         cnt++;
     }
-    cout.fixed;
+    cout << fixed;
     cout.precision(1);
-    cout << sum_val << ' ' << (double) sum_val/cnt;
+    cout << sum_val << ' ' << (double)sum_val / cnt;
     return 0;
 }
