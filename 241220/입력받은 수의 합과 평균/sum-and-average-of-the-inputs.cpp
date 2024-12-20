@@ -12,6 +12,6 @@ int main() {
     }
     cout.fixed;
     cout.precision(1);
-    cout << sum_val << ' ' << (double) sum_val/num;
+    cout << sum_val << ' ' << (double) sum_val/cnt;
     return 0;
 }
