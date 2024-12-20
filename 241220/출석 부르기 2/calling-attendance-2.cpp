@@ -12,7 +12,7 @@ int main() {
         } else if (num == 2) {
             cout << "Tom" << endl;
         } else if (num == 3) {
-            cout << "Paul" << end;;
+            cout << "Paul" << endl;
         } else if (num == 4) {
             cout << "Sam" << endl;
         } else {
