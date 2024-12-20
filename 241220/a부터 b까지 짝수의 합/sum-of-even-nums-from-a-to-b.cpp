@@ -10,6 +10,6 @@ int main() {
         if (a%2 == 0) sum_val += a;
     }
 
-    cout << a;
+    cout << sum_val;
     return 0;
 }
