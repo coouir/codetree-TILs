@@ -19,7 +19,7 @@ int main() {
 
             if (n == 1) break;
         }
-        cout << cnt;
+        cout << cnt << endl;
     }
     return 0;
 }
