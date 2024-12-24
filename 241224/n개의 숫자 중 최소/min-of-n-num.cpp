@@ -20,6 +20,6 @@ int main() {
             cnt++;
         }
     }
-    cout << cnt;
+    cout << min_val << ' ' << cnt;
     return 0;
 }
