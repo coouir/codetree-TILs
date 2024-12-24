@@ -21,7 +21,9 @@ int main() {
                 break;
             }
         }
-        check1 = check2;
+        if (check2) {
+            check1 = true;
+        }
     }
 
     if (check1) {
