@@ -21,6 +21,9 @@ int main() {
     }
 
     int max_val = arr[0];
+    if (arr[0] == arr[1]) {
+        max_val = -1;
+    }
     for (int i=1; i<N-1; i++) {
         if (arr[i] != arr[i-1] && arr[i] != arr[i+1]) {
             max_val = arr[i];
