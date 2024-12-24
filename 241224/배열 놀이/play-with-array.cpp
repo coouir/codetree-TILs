@@ -23,7 +23,7 @@ int main() {
                     break;
                 }
             }
-            cout << idx+1 << endl;
+            cout << idx << endl;
         } else if (t == 3) {
             cin >> s >> e;
             for (int j=s-1; j<e; j++) {
