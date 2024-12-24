@@ -26,7 +26,7 @@ int main() {
     }
     for (int i=1; i<N-1; i++) {
         if (arr[i] != arr[i-1] && arr[i] != arr[i+1]) {
-            max_val = arr[i];
+            if (max_val < arr[i])max_val = arr[i];
             break;
         }
     }
