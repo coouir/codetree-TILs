@@ -19,7 +19,7 @@ int main() {
             int idx = 0;
             for (int i=0; i<n; i++) {
                 if (arr[i] == num) {
-                    idx = i;
+                    idx = i+1;
                     break;
                 }
             }
