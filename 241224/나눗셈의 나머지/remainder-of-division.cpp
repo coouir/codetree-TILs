@@ -6,7 +6,7 @@ int main() {
     int a, b, arr[10] = {0};
     cin >> a >> b;
 
-    while (a>=1) {
+    while (a>1) {
         arr[a%b]++; 
         a /= b;
     }
