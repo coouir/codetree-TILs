@@ -10,6 +10,7 @@ int main() {
     cin >> n;
 
     for (int i=0; i<n; i++) {
+        if (str[str.length()-1-i] == '\0') break;
         cout << str[str.length()-1-i];
     }
     return 0;
