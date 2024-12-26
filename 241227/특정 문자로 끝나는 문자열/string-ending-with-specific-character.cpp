@@ -10,10 +10,15 @@ int main() {
     }
     char c;
     cin >> c;
+    bool check = false;
     for (int i=0; i<10; i++) {
         if (arr[i][arr[i].length()-1] == c) {
             cout << arr[i] << endl;
+            check = true;
         }
+    }
+    if (!(check)) {
+        cout << "None";
     }
     return 0;
 }
