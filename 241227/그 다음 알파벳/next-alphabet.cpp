@@ -9,7 +9,7 @@ int main() {
         c = 'a';
         cout << c;
     } else {
-        cout << (char) c+1;
+        cout << (char)(c+1);
     }
     return 0;
 }
