@@ -15,8 +15,21 @@ int main() {
                 break;
             }
         }
-        if (i == 0 || result[result.length()-2] != str[i]) {
+        if (i == 0) {
             result += (str[i]+to_string(cnt));
+        } else {
+            bool check = false;
+            for (int j=0; j<result.length(); j++) {
+                if (isalpha(result[result.length()-1-j])) {
+                    if (result[result.length()-1-j] != str[i]) {
+                        check = true;
+                    }
+                    break;
+                }
+            }
+            if (check) {
+                result += (str[i]+to_string(cnt));
+            }
         }
     }
     cout << result.length() << endl;
