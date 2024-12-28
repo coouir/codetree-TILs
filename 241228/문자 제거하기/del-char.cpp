@@ -29,7 +29,6 @@ int main() {
                 cout << str[j];
             }
         }
+        cout << endl;
     }
-
-    cout << str;
 }
