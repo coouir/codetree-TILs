@@ -21,13 +21,15 @@ bool cmp1(C a, C b) {
 bool cmp2(C a, C b) {
     return a.h > b.h;
 }
-
 int main() {
     // Please write your code here.
     C c[5];
     for (int i=0; i<5; i++) {
         cin >> c[i].name >> c[i].h >> c[i].w;
     }
+    cout << fixed;
+    cout.precision(1);
+    
     sort(c, c+5, cmp1);
     cout << "name" << endl;
     for (int i=0; i<5; i++) {
