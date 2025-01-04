@@ -9,20 +9,12 @@ int main() {
         int x; char c;
         cin >> x >> c;
         if (c == 'L') {
-            if (x == 1) {
+            for (int j=0; j<x; j++) {
                 arr[--p]++;
-            } else {
-                for (int j=0; j<x; j++) {
-                    arr[--p]++;
-                }
             }
         } else {
-            if (x == 1) {
+            for (int j=0; j<x; j++) {
                 arr[p++]++;
-            } else {
-                for (int j=0; j<x; j++) {
-                    arr[p++]++;
-                }
             }
         }
     }
