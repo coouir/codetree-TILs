@@ -19,7 +19,7 @@ int main() {
     cin >> m1 >> d1 >> m2 >> d2 >> week;
     
     int cnt=0;
-    for (int i=1; i<F(m2, d2)-F(m1, d1); i++) {
+    for (int i=1; i<=F(m2, d2)-F(m1, d1); i++) {
         if (arr[i%7] == week) cnt++;
     }
     cout << cnt;
