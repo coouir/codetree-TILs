@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
     // Please write your code here.
-    int N, M, arrA[1001]={}, arrB[1001]={};
+    int N, M, arrA[1000001]={}, arrB[1000001]={};
     cin >> N >> M;
     
     int time_a = 1;
