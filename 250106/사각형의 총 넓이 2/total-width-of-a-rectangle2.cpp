@@ -8,7 +8,7 @@ int main() {
     for (int i=0; i<N; i++) {
         int x1, y1, x2, y2;
         cin >> x1 >> y1 >> x2 >> y2;
-        for (int x=x1; x<x2; x++) {
+        for (int x=x1+100; x<x2+100; x++) {
             for (int y=y1; y<y2; y++) {
                 arr[x][y] = 1;
             }
