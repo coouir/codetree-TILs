@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
     // Please write your code here.
-    int N, M, arrA[1001]={0}, arrB[1001]={0}, sum_t=0;
+    int N, M, arrA[100001]={0}, arrB[100001]={0}, sum_t=0;
     cin >> N >> M;
     int tA = 1;
     for (int i=0; i<N; i++) {
@@ -39,7 +39,7 @@ int main() {
         }
     }
     int result = -1;
-    for (int i=1; i<sum_t; i++) {
+    for (int i=1; i<=sum_t; i++) {
         if (arrA[i] == arrB[i]) {
             result = i;
             break;
