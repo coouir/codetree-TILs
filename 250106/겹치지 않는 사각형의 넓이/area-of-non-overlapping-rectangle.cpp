@@ -26,8 +26,8 @@ int main() {
         }
     }
     int cnt = 0;
-    for (int i=0; i<201; i++) {
-        for (int j=0; j<201; j++) {
+    for (int i=0; i<2001; i++) {
+        for (int j=0; j<2001; j++) {
             if (arr[i+1000][j+1000] == 1) cnt++;
         }
     }
