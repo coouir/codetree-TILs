@@ -25,6 +25,10 @@ int main() {
             }
         }
     }
-    cout << (maxX-minX+1)*(maxY-minY+1);
+    if (minX == 2000) {
+        cout << 0;
+    } else {
+        cout << (maxX-minX+1)*(maxY-minY+1);
+    }
     return 0;
 }
