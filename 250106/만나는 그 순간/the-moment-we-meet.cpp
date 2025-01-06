@@ -39,7 +39,7 @@ int main() {
         }
     }
     int result = -1;
-    for (int i=1; i<=17; i++) {
+    for (int i=1; i<=sum_t; i++) {
         if (arrA[i] == arrB[i]) {
             result = i;
             break;
