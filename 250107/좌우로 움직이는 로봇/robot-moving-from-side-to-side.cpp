@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
     // Please write your code here.
-    int n, m, arrA[20]={0}, arrB[20]={0}; // 수정해야 함
+    int n, m, arrA[1000000]={0}, arrB[1000000]={0}; // 수정해야 함
     cin >> n >> m;
     int time_a = 1;
     for (int i=0; i<n; i++) {
