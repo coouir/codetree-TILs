@@ -48,7 +48,6 @@ int main() {
             arrNCnt[Y]++;
         }
     }
-    cout << endl;
     for (int i=1; i<=N; i++) {
         cout << arrNInf[i];
     }
