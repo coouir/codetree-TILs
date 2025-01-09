@@ -17,8 +17,8 @@ int main() {
         } else {
             x += dx[dir_num];
             y += dy[dir_num];
-            if (x == 0 && y == 0) ans = (i+1);
         }
+        if (x == 0 && y == 0) ans = (i+1);
     }
     cout << ans;
     return 0;
