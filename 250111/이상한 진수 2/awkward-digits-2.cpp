@@ -17,6 +17,14 @@ int main() {
             }
             if (M < N) M = N;
             a[i] = '0';
+        } else (a[i] == '1') {
+            a[i] = '0';
+            int N = 0;
+            for (int j=0; j<a.length(); j++) {
+                N = 2*N + (a[j]-'0');
+            }
+            if (M < N) M = N;
+            a[i] = '1';
         } 
     }
     cout << M;
