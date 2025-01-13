@@ -17,7 +17,7 @@ int main() {
         for (int k=i+2; k<n; k++) {
             if (m < arr[k]) m = arr[k];
         }
-        if (max_val < arr[i] + m) max_val = arr[i] + m;
+        if (m != 0 && max_val < arr[i] + m) max_val = arr[i] + m;
     }
     cout << max_val;
     return 0;
