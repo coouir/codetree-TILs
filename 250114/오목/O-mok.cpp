@@ -17,7 +17,7 @@ int main() {
                 if (arr[i][j] == arr[i][j+1] && arr[i][j] == arr[i][j+2] && arr[i][j] == arr[i][j+3] && arr[i][j] == arr[i][j+4]) {
                     cout << arr[i][j] << endl;
                     cout << i << ' ' << j+2;
-                    break;
+                    return 0;
                 }
             }
         }
@@ -29,7 +29,7 @@ int main() {
                 if (arr[i][j] == arr[i+1][j] && arr[i][j] == arr[i+2][j] && arr[i][j] == arr[i+3][j] && arr[i][j] == arr[i+4][j]) {
                     cout << arr[i][j] << endl;
                     cout << i+2 << ' ' << j;
-                    break;
+                    return 0;
                 }
             }
         }
@@ -41,7 +41,7 @@ int main() {
                 if (arr[i][j] == arr[i+1][j+1] && arr[i][j] == arr[i+2][j+2] && arr[i][j] == arr[i+3][j+3] && arr[i][j] == arr[i+4][j+4]) {
                     cout << arr[i][j] << endl;
                     cout << i+2 << ' ' << j+2;
-                    break;
+                    return 0;
                 }
             }
         }
@@ -53,10 +53,11 @@ int main() {
                 if (arr[i][j] == arr[i+1][j-1] && arr[i][j] == arr[i+2][j-2] && arr[i][j] == arr[i+3][j-3] && arr[i][j] == arr[i+4][j-4]) {
                     cout << arr[i][j] << endl;
                     cout << i+2 << ' ' << j-2;
-                    break;
+                    return 0;
                 }
             }
         }
-    }
+    }  
+    cout << 0;
     return 0;
 }
