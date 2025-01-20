@@ -5,9 +5,7 @@ using namespace std;
 int main() {
     // Please write your code here.
     int arr[10001]={};
-    int S = 1 << 30;
-    int L = -(1 << 30);
-
+    
     int N, K;
     cin >> N >> K;
     for (int i=0; i<N; i++) {
@@ -20,10 +18,9 @@ int main() {
         S = min(S, x);
         L = max(L, x);
     }
-    cout << S << ' ' << L << endl;
 
     int max_val = 0;
-    for (int i=S; i<L-K+1; i++) {
+    for (int i=1; i<10000-K+1; i++) {
         int sum_val = 0;
 
         for (int j=i; j<=i+K; j++) {
