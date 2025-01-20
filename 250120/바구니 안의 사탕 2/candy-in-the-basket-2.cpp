@@ -15,9 +15,10 @@ int main() {
     }
 
     int max_val = 0;
-    for (int i=0; i<101 -2*K; i++) {
+    for (int i=0; i<101; i++) {
         int sum_val = 0;
         for (int j=i; j<=i+2*K; j++) {
+            if (j > 100) break;
             sum_val += arr[j];
         }
         max_val = max(max_val, sum_val);
