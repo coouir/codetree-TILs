@@ -5,7 +5,7 @@ using namespace std;
 int main() {
     // Please write your code here.
     int arr[10001]={};
-    
+
     int N, K;
     cin >> N >> K;
     for (int i=0; i<N; i++) {
@@ -14,9 +14,6 @@ int main() {
 
         if (c == 'G') arr[x] = 1;
         else arr[x] = 2;
-        
-        S = min(S, x);
-        L = max(L, x);
     }
 
     int max_val = 0;
