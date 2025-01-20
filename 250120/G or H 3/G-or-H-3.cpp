@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
     // Please write your code here.
-    int arr[101]={}, L = 0;
+    int arr[10001]={}, L = 0;
 
     int N, K;
     cin >> N >> K;
