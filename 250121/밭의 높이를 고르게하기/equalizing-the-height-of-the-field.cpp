@@ -17,7 +17,7 @@ int main() {
     for (int i=0; i<N; i++) {
         int cost = 0;
         for (int j=i; j<i+T; j++) {
-            cost += abs(T - arr[j]);
+            cost += abs(H - arr[j]);
         }
         ans = min(ans, cost);
     }
