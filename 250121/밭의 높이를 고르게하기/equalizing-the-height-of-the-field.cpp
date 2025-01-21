@@ -14,7 +14,7 @@ int main() {
     }
 
     int ans = 1 << 30;
-    for (int i=0; i<N; i++) {
+    for (int i=0; i<N-T+1; i++) {
         int cost = 0;
         for (int j=i; j<i+T; j++) {
             cost += abs(H - arr[j]);
