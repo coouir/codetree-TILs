@@ -26,7 +26,7 @@ int main() {
     }
     
     int prefix[100001] = {};
-    for (int i=1; i<=100001; i++) {
+    for (int i=1; i<=n; i++) {
         prefix[i] = arr2[i] + prefix[i-1];
     }
 
