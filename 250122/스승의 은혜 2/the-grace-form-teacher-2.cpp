@@ -11,6 +11,8 @@ int main() {
     for (int i=0; i<N; i++) 
         cin >> arr[i];
 
+    sort(arr, arr+N);
+    
     int max_val = 0;
     for (int i=0; i<N; i++) {
 
