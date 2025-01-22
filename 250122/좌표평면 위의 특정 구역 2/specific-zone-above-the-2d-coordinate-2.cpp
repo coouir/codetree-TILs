@@ -13,11 +13,11 @@ int main() {
 
     int minArea = 1 << 30;
     for (int i=0; i<N; i++) {
-        int minX = 1 << 30;
-        int maxX = -(1 << 30);
+        int minX = 40000;
+        int maxX = 1;
 
-        int minY = 1 << 30;
-        int maxY = -(1 << 30);
+        int minY = 40000;
+        int maxY = 1;
         for (int j=0; j<N; j++) {
             if (i == j) continue;
 
