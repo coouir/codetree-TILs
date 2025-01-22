@@ -1,5 +1,6 @@
 #include <iostream>
 #include <algorithm>
+#include <climits>
 using namespace std;
 
 int main() {
@@ -11,7 +12,7 @@ int main() {
     for (int i=0; i<N; i++) 
         cin >> arr[i][0] >> arr[i][1];
 
-    int minArea = 1 << 30;
+    int minArea = INT_MAX;
     for (int i=0; i<N; i++) {
         int minX = 40000;
         int maxX = 1;
