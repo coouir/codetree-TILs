@@ -34,6 +34,7 @@ int main() {
 
     int N, M, D, S;
     cin >> N >> M >> D >> S;
+
     for (int i=0; i<D; i++) {
         cin >> cd[i].p >> cd[i].m >> cd[i].t;
     }
@@ -46,11 +47,15 @@ int main() {
     int max_val = 0;
     for (int i=1; i<=M; i++) {
         int cnt = 0;
+
         for (int j=0; j<S; j++) {
+            int arrIn[51] = {};
             for (int k=0; k<D; k++) {
                 if (i != cd[k].m) continue;
                 if (cs[j].p != cd[k].p) continue;
                 if (cs[j].t <= cd[k].t) continue;
+                if (arrIn[cd[k].m] == 1) continue;
+                arrIn[cd[k].m] = 1;
                 cnt++;
 
             }
