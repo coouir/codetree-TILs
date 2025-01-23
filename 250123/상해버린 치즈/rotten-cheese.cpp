@@ -58,13 +58,17 @@ int main() {
 
         int sick_people = 0;
         if (cnt == S) {
+            int arr[51] = {};
             for (int j=0; j<D; j++) {
-                if (cd[j].m == i) sick_people++;
+                if (cd[j].m == i) {
+                    if (arr[cd[j].p] == 0) sick_people++;
+                    arr[cd[j].p] = 1;
+                }
             }
             max_val = max(max_val, sick_people);
         }
     }
     cout << max_val;
-    
+
     return 0;
 }
