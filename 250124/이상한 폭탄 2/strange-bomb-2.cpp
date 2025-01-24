@@ -14,7 +14,7 @@ int main() {
     int max_val = -1;
     for (int i=0; i<N; i++) {
         for (int j=i+1; j<N; j++) {
-            if (j-i > 3) continue;
+            if (j-i > K) continue;
             if (arr[i] == arr[j]) max_val = max(max_val, arr[i]);
         }
     }
