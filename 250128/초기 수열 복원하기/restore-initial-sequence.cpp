@@ -24,12 +24,15 @@ int main() {
                 n = arr[k]-n;
                 test[k+1] = n;
                 cnt[n]++;
-
             }
 
             bool check = true;
             for (int k=1; k<=N; k++) {
                 if (!(cnt[k] == 0 || cnt[k] == 1)) {
+                    check = false;
+                    break;
+                }
+                if (test[k-1] == 0) {
                     check = false;
                     break;
                 }
