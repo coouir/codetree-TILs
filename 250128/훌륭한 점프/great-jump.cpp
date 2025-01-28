@@ -19,9 +19,11 @@ int main() {
         int available_indices[100] = {};
         int index = 0;
 
+        if (arr[0] > i || arr[n-1] > i) break;
+        
         for (int j=0; j<n; j++) 
             if (i >= arr[j]) available_indices[index++] = j;
-        
+
         bool check = true;
         for (int j=1; j<index; j++) {
             if (available_indices[j] - available_indices[j-1] > k) {
