@@ -18,14 +18,20 @@ int main() {
             cnt[i]++;
             cnt[j]++;
 
+            bool checkM = true;
             int n = j;
             for (int k=1; k<N-1; k++) {
                 n = arr[k]-n;
-                if (n < 0) break;
+
+                if (n < 0) {
+                    checkM = false;
+                    break;
+                }
                 test[k+1] = n;
                 cnt[n]++;
             }
 
+            if (checkM == false) continue;
             // for (int k=0; k<N; k++) {
             //     cout << test[k] << ' ';
             // }
