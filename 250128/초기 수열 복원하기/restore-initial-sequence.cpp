@@ -10,10 +10,9 @@ int main() {
     for (int i=0; i<N-1; i++)
         cin >> arr[i];
 
-    for (int i=1; i<N; i++) {
-        for (int j=1; j<N; j++) {
+    for (int i=1; i<=N; i++) {
+        for (int j=1; j<=N; j++) {
             if (i+j != arr[0]) continue;
-
             int test[1000] = {i, j};
             int cnt[1001] = {};
             cnt[i]++;
@@ -26,13 +25,18 @@ int main() {
                 cnt[n]++;
             }
 
+            // for (int k=0; k<N; k++) {
+            //     cout << test[k] << ' ';
+            // }
+            // cout << endl;
+
             bool check = true;
             for (int k=1; k<=N; k++) {
                 if (!(cnt[k] == 0 || cnt[k] == 1)) {
                     check = false;
                     break;
                 }
-                if (test[k-1] == 0) {
+                if (test[k-1] <= 0) {
                     check = false;
                     break;
                 }
