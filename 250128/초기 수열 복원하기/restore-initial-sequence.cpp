@@ -13,8 +13,8 @@ int main() {
     for (int i=1; i<=N; i++) {
         for (int j=1; j<=N; j++) {
             if (i+j != arr[0]) continue;
-            int test[1000] = {i, j};
-            int cnt[1001] = {};
+            int test[1100] = {i, j};
+            int cnt[1100] = {};
             cnt[i]++;
             cnt[j]++;
 
