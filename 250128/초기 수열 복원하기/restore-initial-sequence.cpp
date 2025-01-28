@@ -21,6 +21,7 @@ int main() {
             int n = j;
             for (int k=1; k<N-1; k++) {
                 n = arr[k]-n;
+                if (n < 0) break;
                 test[k+1] = n;
                 cnt[n]++;
             }
