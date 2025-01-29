@@ -1,44 +1,37 @@
 #include <iostream>
-#include <algorithm>
-#include <cstdlib>
 using namespace std;
-
-int arr[100];
-int cnt[1000001];
 
 int main() {
     // Please write your code here.
+    int arr[100];
+
     int N, K;
     cin >> N >> K;
     for (int i=0; i<N; i++) 
         cin >> arr[i];
     
-    for (int i=0; i<N; i++) {
-        int count = 0;
-        for (int j=0; j<N; j++) {
-            if (abs(i-j) > K) continue;
-
-            if (arr[i] == arr[j]) count++;
+    int max_val = 0;
+    int max_n = 0;
+    for (int n=1; n<=10; n++) {
+        int index = 0;
+        int arrSat[100] = {};
+        for (int i=0; i<N; i++) {
+            if (arr[i] == n) arrSat[index++] = i;
         }
-        if (count != 1) {
-            cnt[arr[i]] = max(cnt[arr[i]], count);
+        
+        int cnt = 0;
+        for (int i=0; i<index-1; i++) {
+            if (arrSat[i] - arrSat[i-1] > K) break;
+            cnt++;
+        }
+        if (cnt != 0) {
+            if (max_val <= cnt) {
+                max_val = cnt;
+                max_n = n;
+            }
         } 
     }
-
-    int max_index = 0;
-    for (int i=1; i<=1000000; i++) {
-        if (cnt[max_index] <= cnt[i]) max_index = i;
-    }
+    cout << max_n;
     
-    if (cnt[max_index] != 0) {
-        cout << max_index;
-    } else {
-        cout << 0;
-    }
-
     return 0;
 }
-
-// N K
-// 6 3
-// 7 2 4 2 2 4
