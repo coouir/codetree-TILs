@@ -6,7 +6,7 @@ int main() {
     // Please write your code here.
     int X;
     cin >> X;
-    cout << sqrt(X-1) + sqrt(X-1);
+    cout << (int)(sqrt(X-1) + sqrt(X-1));
     return 0;
 }
 
