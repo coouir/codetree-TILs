@@ -12,7 +12,7 @@ int main() {
     
     int max_val = 0;
     int max_n = 0;
-    for (int n=1; n<=10; n++) {
+    for (int n=1; n<=1000000; n++) {
         int index = 0;
         int arrSat[100] = {};
         for (int i=0; i<N; i++) {
