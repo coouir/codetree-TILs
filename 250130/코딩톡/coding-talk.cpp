@@ -31,20 +31,14 @@ int main() {
     //     cout << endl;
     // }
 
-    if (p != 0) {
-        int index = p;
-        for (int i=p-1; i>=0; i--) {
-            if (u[i] == u[p]) index = i;
-            else break;
-        }
+    int index = p;
+    for (int i=p-1; i>=0; i--) {
+        if (u[i] == u[p]) index = i;
+        else break;
+    }
 
-        for (int i=0; i<n; i++) {
-            if (member[index][i] == 0) cout << (char) (i+65) << ' ';
-        }
-    } else {
-        for (int i=0; i<n; i++) {
-            if (member[0][i] == 0) cout << (char) (i+65) << ' ';
-        }
+    for (int i=0; i<n; i++) {
+        if (member[index][i] == 0) cout << (char) (i+65) << ' ';
     }
 
     return 0;
