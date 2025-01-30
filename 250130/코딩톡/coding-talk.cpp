@@ -23,13 +23,6 @@ int main() {
             for (int j=i; j<m; j++) member[i][c[j]-65] = 1;  
         }
     }
-    
-    // for (int i=0; i<m; i++) {
-    //     for (int j=0; j<n; j++) {
-    //         cout << member[i][j] << ' ';
-    //     }
-    //     cout << endl;
-    // }
 
     int index = p;
     for (int i=p-1; i>=0; i--) {
@@ -43,12 +36,3 @@ int main() {
 
     return 0;
 }
-
-// A B C D E F
-
-// D 0 A B C D E F
-// C 1 C B A F         D E 
-// B 2 B A F           C D E
-// B 2 B A F           C D E
-// A 2 A F             B C D E
-// F 4 F               A B C D E F
