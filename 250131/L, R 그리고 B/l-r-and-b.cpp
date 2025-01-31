@@ -27,13 +27,13 @@ int main() {
     }
 
     if (xL == xB) {
-        if (xL == xR) {
+        if (xL == xR && (abs(yL-yR) < abs(yL-yB))) {
             cout << abs(yL - yB) + 1;
         } else {
             cout << abs(yL - yB) - 1;
         }
     } else if (yL == yB) {
-        if (yL == yR) {
+        if (yL == yR && (abs(xL-xR) < abs(xL-xB))) {
             cout << abs(xL - xB) + 1;
         } else {
             cout << abs(xL - xB) - 1;
