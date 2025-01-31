@@ -43,32 +43,37 @@ int main() {
     arr[(max_i + max_j)/2] = 0;
 
     // Case 2)
-    int min_val = 1<<30;
+    int min_val2 = 1<<30;
     if (arr[0] == 0) {
         arr[0] = 1;
         for (int i=0; i<N; i++) {
             for (int j=i+1; j<N; j++) {
                 if (arr[i] == 1 && arr[j] == 1) {
-                    min_val = min(min_val, j-i);
+                    min_val2 = min(min_val2, j-i);
                     break;
                 }
             }
         }
         arr[0] = 0;
     } 
+
+    // Case 3)
+    int min_val3 = 1<<30;
     if (arr[N-1] == 0) {
         arr[N-1] = 1;
         for (int i=0; i<N; i++) {
             for (int j=i+1; j<N; j++) {
                 if (arr[i] == 1 && arr[j] == 1) {
-                    min_val = min(min_val, j-i);
+                    min_val3 = min(min_val3, j-i);
                     break;
                 }
             }
         }
         arr[N-1] = 0;
     }
-    max_val = max(max_val, min_val);
+    if (min_val2 == 1<<30) min_val2 = 0;
+    if (min_val3 == 1<<30) min_val3 = 0;
+    max_val = max(max_val, max(min_val2, min_val3));
 
     cout << max_val;
 
