@@ -23,6 +23,12 @@ int main() {
         }
     }
 
-    cout << abs(xL - xB) + abs(yL - yB) - 1;
+    if (xL == xB) {
+        cout << abs(yL - yB) + 1;
+    } else if (yL == yB) {
+        cout << abs(xL - xB) + 1;
+    } else {
+        cout << abs(xL - xB) + abs(yL - yB) - 1;
+    }
     return 0;
 }
