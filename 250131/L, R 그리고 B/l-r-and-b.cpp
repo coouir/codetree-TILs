@@ -10,7 +10,7 @@ int main() {
         for (int j=1; j<=10; j++) 
             cin >> arr[i][j];
         
-    int xL, yL, xB, yB;
+    int xL, yL, xB, yB, xR, yR;
     for (int i=1; i<=10; i++) {
         for (int j=1; j<=10; j++) {
             if (arr[i][j] == 'L') {
@@ -19,14 +19,25 @@ int main() {
             } else if (arr[i][j] == 'B') {
                 xB = i;
                 yB = j;
+            } else if (arr[i][j] == 'R') {
+                xR = i;
+                yR = j;
             }
         }
     }
 
     if (xL == xB) {
-        cout << abs(yL - yB) + 1;
+        if (xL == xR) {
+            cout << abs(yL - yB) + 1;
+        } else {
+            cout << abs(yL - yB) - 1;
+        }
     } else if (yL == yB) {
-        cout << abs(xL - xB) + 1;
+        if (yL == yR) {
+            cout << abs(xL - xB) + 1;
+        } else {
+            cout << abs(xL - xB) - 1;
+        }
     } else {
         cout << abs(xL - xB) + abs(yL - yB) - 1;
     }
