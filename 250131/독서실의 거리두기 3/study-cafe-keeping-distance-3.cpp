@@ -26,6 +26,7 @@ int main() {
             }
         }
     }
+
     arr[(max_i + max_j)/2] = 1;
  
     int min_val = 1<<30;
@@ -37,7 +38,6 @@ int main() {
             }
         }
     }
-
     cout << min_val;
 
     return 0;
