@@ -55,7 +55,8 @@ int main() {
             }
         }
         arr[0] = 0;
-    } else if (arr[N-1] == 0) {
+    } 
+    if (arr[N-1] == 0) {
         arr[N-1] = 1;
         for (int i=0; i<N; i++) {
             for (int j=i+1; j<N; j++) {
