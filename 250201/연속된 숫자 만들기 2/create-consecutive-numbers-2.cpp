@@ -5,17 +5,16 @@ int main() {
     // Please write your code here.
     int a, b, c;
     cin >> a >> b >> c;
-    if (b-a >= c-b) {
-        cout << c-b - 1;
+    if (b-a == 1 && c-b == 1) {
+        cout << 0;
     } else {
-        cout << b-a - 1;
+        cout << 2;
     }
-    
     return 0;
 }
 
-
-
 // 2   6   9
-//     6 8 9
-//     6 7 8
+// 1   4   10
+
+// 4-1 = 3
+// 10-4 = 
