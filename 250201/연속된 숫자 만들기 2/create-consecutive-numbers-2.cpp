@@ -1,13 +1,17 @@
 #include <iostream>
+#include <algorithm>
 using namespace std;
 
 int main() {
     // Please write your code here.
-    int a, b, c;
-    cin >> a >> b >> c;
-    if (b-a == 1 && c-b == 1) {
+    int arr[3];
+    for (int i=0; i<3; i++) 
+        cin >> arr[i];
+    sort(arr, arr+3);
+
+    if (arr[1]-arr[0] == 1 && arr[2]-arr[1] == 1) {
         cout << 0;
-    } else if (c-b == 2 || b-a == 2) {
+    } else if (arr[2]-arr[1] == 2 || arr[1]-arr[0] == 2) {
         cout << 1;
     } else {
         cout << 2;
@@ -15,8 +19,3 @@ int main() {
 
     return 0;
 }
-// 2   6   9
-// 1   4   10
-
-// 4-1 = 3
-// 10-4 = 
