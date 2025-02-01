@@ -10,7 +10,7 @@ int main() {
     for (int i=0; i<n; i++)
         cin >> arr[i];
     
-    for (int max_i=1; max_i<=10; max_i++) {
+    for (int max_i=1; max_i<=10000; max_i++) {
         int cnt = 0;
         int sum_val = 0;
         for (int i=0; i<n; i++) {
