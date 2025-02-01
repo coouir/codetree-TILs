@@ -38,9 +38,11 @@ int main() {
         if (arr[i] >= 0) break;
         index = i; 
     }
-    max_val = max(max_val, arr[index] * arr[index-1] * arr[index-2]);
+    if (index >= 2) {
+        max_val = max(max_val, arr[index] * arr[index-1] * arr[index-2]);
+    }
 
     cout << max_val;
-    
+
     return 0;
 }
