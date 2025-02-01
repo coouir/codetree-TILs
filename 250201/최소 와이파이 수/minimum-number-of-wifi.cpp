@@ -13,11 +13,8 @@ int main() {
     int cnt = 0;
     for (int i=1; i<=n; i++) {
         if (arr[i] == 1) {
-            int wifi = i + m;
             cnt++;
-            for (int j=0; j<=n; j++) {
-                if ((wifi-m <= j && j <= wifi+m) && arr[j] == 1) arr[j] = 0;
-            }
+            i += 2*m;
         }
     }
     cout << cnt;
