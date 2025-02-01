@@ -7,7 +7,7 @@ int main() {
     cin >> a >> b >> c;
     if (b-a == 1 && c-b == 1) {
         cout << 0;
-    } else if (b-c == 2 || b-a == 2) {
+    } else if (c-b == 2 || b-a == 2) {
         cout << 1;
     } else {
         cout << 2;
