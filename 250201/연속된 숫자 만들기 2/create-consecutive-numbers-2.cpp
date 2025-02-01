@@ -7,12 +7,14 @@ int main() {
     cin >> a >> b >> c;
     if (b-a == 1 && c-b == 1) {
         cout << 0;
+    } else if (b-c == 2 || b-a == 2) {
+        cout << 1;
     } else {
         cout << 2;
     }
+
     return 0;
 }
-
 // 2   6   9
 // 1   4   10
 
