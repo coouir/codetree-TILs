@@ -16,27 +16,28 @@ int main() {
     }
 
     it = l.end();
-    it--;
     for (int i=0; i<m; i++) {
         cin >> c;
         if (c == 'L') {
             if (it == l.begin()) continue;
             it--;
+
         } else if (c == 'R') {
             if (it == l.end()) continue;
             it++;
+
         } else if (c == 'D') {
+            if (it == l.end()) continue;
             l.erase(it);
         } else if (c == 'P') {
             char ch;
             cin >> ch;
-            it++;
             l.insert(it, ch);
         }
     }
-
     for (it = l.begin(); it != l.end(); it++) {
         cout << *it;
     }
+
     return 0;
 }
