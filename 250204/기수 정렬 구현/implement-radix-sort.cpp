@@ -24,19 +24,15 @@ int main() {
         }
 
         int index = 0;
-        int store_arr[100000];
         for (int j=0; j<10; j++) {
             for (int k=0; k<arr_new[j].size(); k++) {
-                store_arr[index++] = arr_new[j][k];
+                arr[index++] = arr_new[j][k];
             }
-        }
-
-        for (int i=0; i<n; i++) {
-            arr[i] = store_arr[i];
         }
     }
 
     for (int i=0; i<n; i++) 
         cout << arr[i] << ' ';
+
     return 0;
 }
