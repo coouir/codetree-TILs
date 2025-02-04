@@ -16,7 +16,6 @@ int main() {
     int min_val = 1 << 30;
     for (int i=0; i<n; i++) {
         min_val = min(min_val, arr[i+n] - arr[i]);
-        cout << arr[i+n] << ' ' << arr[i] << endl;
     }
     cout << min_val;
     
