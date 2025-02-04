@@ -28,7 +28,7 @@ int main() {
 
         } else if (c == 'D') {
             if (it == l.end()) continue;
-            l.erase(it);
+            it = l.erase(it);
         } else if (c == 'P') {
             char ch;
             cin >> ch;
