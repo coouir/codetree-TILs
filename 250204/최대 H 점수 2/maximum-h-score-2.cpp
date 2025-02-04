@@ -15,8 +15,7 @@ int main() {
     // for (int i=0; i<N; i++) {
     //     cout << arr[i] << ' ';
     // }
-
-    //cout << '\n';
+    // cout << endl;
 
     int max_val = 0;
     for (int h=1; h<=100; h++) {
@@ -26,23 +25,19 @@ int main() {
             if (arr[i] < h) index = i;
             else cnt++;
         }
-        //cout << cnt << ' ' << h << endl;
-
-        int time = L;
-        while(time) {
+        for (int i=0; i<L; i++) {
             if (arr[index]+1 >= h) {
                 cnt++;
-                time--;
-            } else {
-                break;
             }
+            index--;
+            if (index < 0) break;
         }
-        //cout << cnt << endl;
 
         if (cnt >= h) {
             max_val = h;
         }
     }
+
     cout << max_val;
 
     return 0;
