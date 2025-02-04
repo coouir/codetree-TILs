@@ -12,13 +12,9 @@ int main() {
         cin >> arr[i];
     
     sort(arr, arr+N);
-    // for (int i=0; i<N; i++) {
-    //     cout << arr[i] << ' ';
-    // }
-    // cout << endl;
 
     int max_val = 0;
-    for (int h=1; h<=100; h++) {
+    for (int h=1; h<=N; h++) {
         int cnt = 0;
         int index = 0;
         for (int i=0; i<N; i++) {
