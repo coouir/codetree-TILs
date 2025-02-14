@@ -16,8 +16,8 @@ int main() {
             suffix[i] = suffix[i+1];
         }
     }
-    
-    int cnt = 0;
+
+    long long cnt = 0;
     for (int i=0; i<(int)str.size()-1; i++) {
         if (str[i] == '(' && str[i+1] == '(') {
             cnt += suffix[i+2];
