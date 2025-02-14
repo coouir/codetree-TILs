@@ -27,6 +27,7 @@ int main() {
             total += arr[e];
         }
     }
+    if (min_val == 1<<30) min_val = -1;
     cout << min_val;
 
     return 0;
