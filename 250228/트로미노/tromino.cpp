@@ -9,7 +9,7 @@ int N, M;
 int arr[200][200];
 
 bool InRange(int x, int y) {
-    return((0 <= x && x < N) && (0 <= y && y < N));
+    return((0 <= x && x < N) && (0 <= y && y < M));
 }
 
 int main() {
@@ -25,7 +25,7 @@ int main() {
 
     // Case 1)
     for (int i=0; i<N-1; i++) {
-        for (int j=0; j<N-1; j++) {
+        for (int j=0; j<M-1; j++) {
             int sum_val = arr[i][j] + arr[i][j+1] + arr[i+1][j] + arr[i+1][j+1];
             int min_val = min(arr[i][j], min(arr[i][j+1], min(arr[i+1][j], arr[i+1][j+1])));
 
@@ -35,7 +35,7 @@ int main() {
 
     // Case 2)
     for (int i=0; i<N; i++) {
-        for (int j=0; j<N; j++) {
+        for (int j=0; j<M; j++) {
 
             int x1 = i;
             int y1 = j;
