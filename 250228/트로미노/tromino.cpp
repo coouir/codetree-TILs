@@ -2,8 +2,9 @@
 #include <algorithm>
 using namespace std;
 
-int dx[8] = {-1, -1, -1, 0, 0, 1, 1, 1};
-int dy[8] = {-1, 0, 1, -1, 1, -1, 0, 1};
+
+int dx[4] = {0, 1, 0, -1};
+int dy[4] = {1, 0, -1, 0};
 
 int N, M;
 int arr[200][200];
@@ -39,7 +40,7 @@ int main() {
 
             int x1 = i;
             int y1 = j;
-            for (int k=0; k<8; k++) {
+            for (int k=0; k<4; k++) {
                 int x2 = x1 + dx[k];
                 int y2 = y1 + dy[k];
 
