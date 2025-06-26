@@ -1,6 +1,10 @@
-N = int(input())
-
-print(input())
+n = int(input())
+arr = [
+    input()
+    for _ in range(n)
+]
+print(arr)
+print(arr[0][0], len(arr))
 """
 /
 N: 오른쪽으로 회전
