@@ -8,8 +8,9 @@ r, c, dir = 0, 0, 1
 dr = [-1, 0, 1, 0]
 dc = [0, 1, 0, -1]
 
-for ch in range(65, 65 + N*M):
-    arr[r][c] = chr(ch)
+ch = 'A'
+for i in range(N*M):
+    arr[r][c] = chr(ord('A') + i%26)
 
     nr = r + dr[dir]
     nc = c + dc[dir]
