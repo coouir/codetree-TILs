@@ -1,6 +1,6 @@
 N = int(input())
-arr = [input() for i in range(N)]
-print(arr)
+
+print(input())
 """
 /
 N: 오른쪽으로 회전
