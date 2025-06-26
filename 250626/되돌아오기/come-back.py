@@ -24,3 +24,5 @@ for i in range(N):
         if x == 0 and y == 0:
             print(cnt)
             exit()
+
+print(-1)
