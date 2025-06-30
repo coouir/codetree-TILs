@@ -28,7 +28,7 @@ for i in range(19):
                     cnt += 1
 
             if cnt == 4:
-                print(arr[i][j], k)
+                print(arr[i][j])
                 print(i+1, j+1)
                 exit()
 
