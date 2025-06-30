@@ -11,8 +11,8 @@ for i in range(19):
         if arr[i][j] == 0:
             continue
 
-        cnt = 0
         for k in range(4):
+            cnt = 0
             r, c = i, j
             for l in range(2):
                 r += dr[k]
@@ -26,8 +26,9 @@ for i in range(19):
                 c += dc[7-k]
                 if in_range(r, c) and arr[r][c] == arr[i][j]:
                     cnt += 1
+
             if cnt == 4:
-                print(arr[i][j])
+                print(arr[i][j], k)
                 print(i+1, j+1)
                 exit()
 
