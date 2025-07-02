@@ -1,7 +1,7 @@
 N = int(input())
 
-arr = [0 for _ in range(100100)]
-prefix = [0 for _ in range(100100)]
+arr = [0 for _ in range(200100)]
+prefix = [0 for _ in range(200100)]
 
 arrP = [list(map(int, input().split())) for _ in range(N)]
 arrS = []
@@ -22,7 +22,7 @@ for i in range(N):
     arr[arrP[i][0]] += 1
     arr[arrP[i][1]] -= 1
 
-for i in range(1, 100100):
+for i in range(1, 200100):
     prefix[i] = arr[i] + prefix[i-1]
 
 print(max(prefix))
