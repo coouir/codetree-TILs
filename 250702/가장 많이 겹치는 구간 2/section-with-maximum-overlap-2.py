@@ -1,14 +1,28 @@
 N = int(input())
 
-arr = [0 for _ in range(100010)]
-prefix = [0 for _ in range(100010)]
+arr = [0 for _ in range(100100)]
+prefix = [0 for _ in range(100100)]
+
+arrP = [list(map(int, input().split())) for _ in range(N)]
+arrS = []
+for i in range(N):
+    arrS.append(arrP[i][0])
+    arrS.append(arrP[i][1])
+arrS.sort()
+
+mapper = {}
+for i in range(N*2):
+    mapper[arrS[i]] = i+1
 
 for i in range(N):
-    x1, x2 = map(int, input().split())
-    arr[x1] += 1
-    arr[x2] -= 1
+    arrP[i][0] = mapper[arrP[i][0]]
+    arrP[i][1] = mapper[arrP[i][1]]
 
-for i in range(1, 100010):
+for i in range(N):
+    arr[arrP[i][0]] += 1
+    arr[arrP[i][1]] -= 1
+
+for i in range(1, 100100):
     prefix[i] = arr[i] + prefix[i-1]
-     
+
 print(max(prefix))
