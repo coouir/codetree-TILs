@@ -1,7 +1,7 @@
 N, M = map(int, input().split())
 arr = [int(input()) for _ in range(N)]
 
-answer = -1
+answer = 0
 
 s = 1
 e = max(arr)
